@@ -11,8 +11,8 @@ class Game(Singleton):
         self.players = []
     def randomnumber(self):
         list=[]
-        for i in range(5):
-            r=random.randint(1,100)
+        for i in range(5): 
+            r=random.randint(1,100) # Sensitive
             if r not in list: list.append(r)
         print(""" Numeros random:""")
         for x in range(len(list)):

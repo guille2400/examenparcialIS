@@ -2,8 +2,8 @@ from typing import Container
 
 
 class cincoPare():
-    def __init__(container):
-        container = 0
+    def __init__(self):
+        self.container = 0
     def winner(self,value):
         if value%2==0:
             container = container+1
@@ -12,8 +12,8 @@ class cincoPare():
         return False
 
 class cincoImpar():
-    def __init__(container):
-        container = 0
+    def __init__(self):
+        self.container = 0
     def winner(self,value):
         if value%2==1:
             container = container+1
@@ -22,8 +22,8 @@ class cincoImpar():
         return False
 
 class numPrimo():
-    def __init__(container):
-        container = 0
+    def __init__(self):
+        self.container = 0
     def winner(self,value):
         for n in range(2, value):
             if value % n == 0:
@@ -32,8 +32,8 @@ class numPrimo():
         return True
 
 class tresmultidiez():
-    def __init__(container):
-        container = 0
+    def __init__(self):
+        self.container = 0
     def winner(self,value): 
         if value % 10 ==0:
             container = container+1
@@ -42,7 +42,7 @@ class tresmultidiez():
             
 
 class dosmulti25():
-    def __init__(container):
+    def __init__(self):
         container = 0
     def winner(self,value): 
         if value % 25 ==0:
